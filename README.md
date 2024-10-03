@@ -23,12 +23,12 @@
 ---
 
 ### Задание 1
-![screen1](https://github.com/alibok86/zabbix_hw/tree/master/1-1.PNG)
-![screen2](https://github.com/alibok86/zabbix_hw/tree/master/1-2.PNG)
+![screen1](https://github.com/alibok86/zabbix_hw/tree/master/img/1-1.PNG)
+![screen2](https://github.com/alibok86/zabbix_hw/tree/master/img/1-2.PNG)
 
 
 ### Задание 2
-![screen1](https://github.com/alibok86/zabbix_hw/tree/master/2-1.PNG)
-![screen2](https://github.com/alibok86/zabbix_hw/tree/master/2-2.PNG)
+![screen1](https://github.com/alibok86/zabbix_hw/tree/master/img/2-1.PNG)
+![screen2](https://github.com/alibok86/zabbix_hw/tree/master/img/2-2.PNG)
 ``````
 
