@@ -23,12 +23,27 @@
 ---
 
 ### Задание 1
-![screen1](https://github.com/alibok86/zabbix_hw/tree/master/img/1-1.PNG)
-![screen2](https://github.com/alibok86/zabbix_hw/tree/master/img/1-2.PNG)
+sudo apt install postgresql
+wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4+debian11_all.deb
+dpkg -i zabbix-release_6.0-4+debian11_all.deb
+apt update
 
+sudo -u postgres createuser --pwprompt zabbix
+sudo -u postgres createdb -O zabbix zabbix
+
+zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+
+Редактируем файл /etc/zabbix/zabbix_server.conf
+ищем строку
+DBPassword=password
+
+systemctl restart zabbix-server zabbix-agent apache2
+systemctl enable zabbix-server zabbix-agent apache2
+![screen1](https://github.com/alibok86/zabbix_hw/blob/master/img/1-1.PNG)
+![screen2](https://github.com/alibok86/zabbix_hw/blob/master/img/1-2.PNG)
 
 ### Задание 2
-![screen1](https://github.com/alibok86/zabbix_hw/tree/master/img/2-1.PNG)
-![screen2](https://github.com/alibok86/zabbix_hw/tree/master/img/2-2.PNG)
+![screen2](https://github.com/alibok86/zabbix_hw/blob/master/img/2-1.PNG)
+![screen2](https://github.com/alibok86/zabbix_hw/blob/master/img/2-2.PNG)
 ``````
 
